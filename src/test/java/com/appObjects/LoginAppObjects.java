@@ -22,11 +22,14 @@ public class LoginAppObjects  {
 	@FindBy(id="right_col_top_err")WebElement errormessage;
 	
 	
+	
+	
+	
 	public  void getusername(String un) {
 		
 		test = report.startTest("Login Test Report");
 		
-		if(username.isDisplayed()) {
+		if(username.isDisplayed() && username.isEnabled()) {
 			username.sendKeys(un);
 			
 		}
