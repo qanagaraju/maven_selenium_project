@@ -61,9 +61,14 @@ public class LoginAppService
 	
 	@Test(priority=2,description="verify Invalid login")
 	public void verify_Invalid_login(String username,String password)  {
+		try {
+		
 		loginservice= PageFactory.initElements(driver, LoginTestCase.class);
 		loginservice.insertusername("tester").insertpassword("admin").clicksubmit().clicksignout();
 		
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
 		
 		
 	
