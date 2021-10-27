@@ -1,0 +1,9 @@
+
+@featureTest @Scenario1
+Scenario: My basic contact form Test # App_Features/test.feature:5
+  Given user launch home page        # com.Cucumber_Project.StepDefinitions.user_lauch_home_page()
+  When user clicks on sampleforms    # com.Cucumber_Project.StepDefinitions.user_clicks_on_sampleforms()
+  When user enters subject           # com.Cucumber_Project.StepDefinitions.user_enters_subject()
+  When user enters email id          # com.Cucumber_Project.StepDefinitions.user_enters_email_id()
+  Then user enters textfield data    # com.Cucumber_Project.StepDefinitions.user_enters_textfield_data()
+  Then user close browser            # com.Cucumber_Project.StepDefinitions.user_close_browser()

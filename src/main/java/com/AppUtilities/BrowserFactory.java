@@ -14,7 +14,7 @@ public final class BrowserFactory
    
 	static WebDriver driver=null;
 	
-	public   WebDriver startbrowser(String appname,String appurl) {
+	public  static WebDriver startbrowser(String appname,String appurl) {
 		
 		if(appname.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();

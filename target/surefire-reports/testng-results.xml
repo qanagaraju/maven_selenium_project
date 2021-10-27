@@ -1,45 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-26T21:41:39 IST" name="Suite" finished-at="2021-10-26T21:41:48 IST" duration-ms="9559">
+  <suite started-at="2021-10-27T21:22:41 IST" name="Suite" finished-at="2021-10-27T21:22:49 IST" duration-ms="8243">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Cucumber_Project.TestRunner@11bd0f3b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-10-26T21:41:39 IST" name="Test1" finished-at="2021-10-26T21:41:48 IST" duration-ms="9559">
-      <class name="com.TestCases.LoginAppService">
-        <test-method is-config="true" signature="setupsuite()[pri:0, instance:com.TestCases.LoginAppService@776b83cc]" started-at="2021-10-26T21:41:39 IST" name="setupsuite" finished-at="2021-10-26T21:41:39 IST" duration-ms="13" status="PASS">
+    <test started-at="2021-10-27T21:22:41 IST" name="CucumberTest" finished-at="2021-10-27T21:22:49 IST" duration-ms="8243">
+      <class name="com.Cucumber_Project.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.Cucumber_Project.TestRunner@11bd0f3b]" started-at="2021-10-27T21:22:41 IST" name="setUpClass" finished-at="2021-10-27T21:22:41 IST" duration-ms="441" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupsuite -->
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.TestCases.LoginAppService@776b83cc]" started-at="2021-10-26T21:41:39 IST" name="startBrowser" finished-at="2021-10-26T21:41:43 IST" duration-ms="4672" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method signature="verify_valid_login(java.lang.String,java.lang.String)[pri:1, instance:com.TestCases.LoginAppService@776b83cc]" started-at="2021-10-26T21:41:43 IST" name="verify_valid_login" description="verify valid login" finished-at="2021-10-26T21:41:47 IST" duration-ms="3317" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Cucumber_Project.TestRunner@11bd0f3b]" started-at="2021-10-27T21:22:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-27T21:22:49 IST" duration-ms="7458" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[qatrainer]]>
+                <![CDATA["My basic contact form Test"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin123]]>
+                <![CDATA["Optional[Test script for cucumber cases]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_valid_login -->
-        <test-method signature="verify_Invalid_login()[pri:2, instance:com.TestCases.LoginAppService@776b83cc]" started-at="2021-10-26T21:41:47 IST" name="verify_Invalid_login" description="verify Invalid login" finished-at="2021-10-26T21:41:48 IST" duration-ms="1323" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Cucumber_Project.TestRunner@11bd0f3b]" started-at="2021-10-27T21:22:49 IST" name="tearDownClass" finished-at="2021-10-27T21:22:49 IST" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_Invalid_login -->
-        <test-method is-config="true" signature="closeTest()[pri:0, instance:com.TestCases.LoginAppService@776b83cc]" started-at="2021-10-26T21:41:48 IST" name="closeTest" finished-at="2021-10-26T21:41:48 IST" duration-ms="172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTest -->
-      </class> <!-- com.TestCases.LoginAppService -->
-    </test> <!-- Test1 -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.Cucumber_Project.TestRunner -->
+    </test> <!-- CucumberTest -->
   </suite> <!-- Suite -->
 </testng-results>
